@@ -1,0 +1,36 @@
+.confirmation {
+  background-color: #5a0b4d;
+  padding: 16px;
+
+  &__title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+    @media (max-width: 640px) {
+      flex-direction: column-reverse;
+    }
+
+    &__text {
+      color: white;
+      text-align: justify;
+      font-size: 20px;
+
+      p:last-child {
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .form {
+    width: 100%;
+  }
+}

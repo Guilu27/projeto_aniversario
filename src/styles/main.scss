@@ -2,6 +2,10 @@
 @use "components/info-bar";
 @use "description";
 @use "menu";
+@use "components/form";
+@use "confirmation";
+@use "components/button";
+@use "thanks";
 
 * {
   margin: 0;
