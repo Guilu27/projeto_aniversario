@@ -1,0 +1,37 @@
+.info-bar {
+  width: 40%;
+  margin: 0 auto;
+  background-color: white;
+  color: #5a0b4d;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 56px 16px rgba(0, 121, 201, 0.15);
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      font-size: 14px;
+
+      b {
+        display: block;
+
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    text-align: center;
+    width: 50%;
+
+    &__info {
+      display: block;
+
+      &__item:first-child {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

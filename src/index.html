@@ -3,7 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Meu aniversário</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__name">Guilherme D. Santos</h1>
+        <p class="hero__text">
+          O meu aniversário começa em
+          <span id="counter">17d 23h 27min 8s</span>
+        </p>
+        <div class="info-bar">
+          <ul class="info-bar__info">
+            <li class="info-bar__info__item"><b>Lugar</b>Minha Casa</li>
+            <li class="info-bar__info__item">
+              <b>Quando</b> 22/11/2023 às 19h 27min
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container" data-aos="fade-right">
+        <div class="description__text-container">
+          <h2 class="description__text-container__title">Celebre Comigo</h2>
+          <p class="description__text-container__text">
+            Venha celebrar conosco o aniversário de Guilherme Duarte Santos! Uma
+            festa cheia de alegria, amigos, música e momentos especiais está
+            sendo preparada para tornar este dia inesquecível. Junte-se a nós
+            para comemorar a vida de Guilherme em grande estilo e criar memórias
+            que durarão para sempre. Não perca esta festa incrível!
+          </p>
+        </div>
+        <img
+          class="description__image"
+          src="images/description/description.jpg"
+          alt="Balões de festa"
+        />
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container" data-aos="fade-up">
+        <h2 class="menu__title" data-aos="fade-up">Menu Irresistível</h2>
+        <div class="menu__content">
+          <div class="menu__content__card" data-aos="fade-up">
+            <img
+              class="menu__content__card__image"
+              src="images/menu/savory_snacks.jpeg"
+              alt="salgados"
+            />
+            <h3 class="menu__content__card__title">Salgados Deliciosos</h3>
+            <p class="menu__content__card__text">
+              Prepare-se para uma explosão de sabor com esses petiscos
+              deliciosos. Eles são a estrela do nosso evento!
+            </p>
+          </div>
+
+          <div class="menu__content__card" data-aos="fade-up">
+            <img
+              class="menu__content__card__image"
+              src="images/menu/sweets.jpeg"
+              alt="salgados"
+            />
+            <h3 class="menu__content__card__title">Doces Tentadores</h3>
+            <p class="menu__content__card__text">
+              Não dá para resistir a essas sobremesas maravilhosas. Pegue um ou
+              dois, ou talvez um monte!
+            </p>
+          </div>
+
+          <div class="menu__content__card" data-aos="fade-up">
+            <img
+              class="menu__content__card__image"
+              src="images/menu/beverages.jpeg"
+              alt="salgados"
+            />
+            <h3 class="menu__content__card__title">Bebidas Refrescantes</h3>
+            <p class="menu__content__card__text">
+              Mantenha-se fresco e animado com bebidas especiais. Elas vão fazer
+              a festa ficar ainda mais incrível!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

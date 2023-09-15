@@ -1,0 +1,51 @@
+.hero {
+  background-image: url("../images/hero/hero.jpg");
+  background-repeat: no-repeat;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  background-size: cover;
+  position: relative;
+
+  color: #d3f6db;
+
+  .container {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    background-color: black;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &__name {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 40px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    &__name {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 24px;
+      margin-top: 48px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  }
+}

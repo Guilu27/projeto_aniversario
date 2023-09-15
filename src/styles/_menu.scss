@@ -1,0 +1,46 @@
+.menu {
+  padding: 16px;
+  color: #5a0b4d;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 16px;
+
+    &__card {
+      padding: 16px;
+      box-shadow: 0px 0px 6.1px rgba(0, 0, 0, 0.004),
+        0px 0px 11.5px rgba(0, 0, 0, 0.006), 0px 0px 16.3px rgba(0, 0, 0, 0.008),
+        0px 0px 20.6px rgba(0, 0, 0, 0.009), 0px 0px 24.8px rgba(0, 0, 0, 0.011),
+        0px 0px 29px rgba(0, 0, 0, 0.013), 0px 0px 33.9px rgba(0, 0, 0, 0.017),
+        0px 0px 40.6px rgba(0, 0, 0, 0.022), 0px 0px 51.9px rgba(0, 0, 0, 0.032),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
+      border-radius: 8px;
+
+      &__image {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      &__title {
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+    }
+  }
+}
